@@ -1,20 +1,27 @@
-package ru.job4j.calculate;
+ppackage ru.job4j.calculate;
 
 /**
-*Class Calculate решение задачи из части chapter001.
-*@author Ivan Cheporov
-*@since 15.09.2018
-*@version 1.0
-*/
- 
+ * Calculate.
+ *
+ * @author Ivan Cheporov (mailto:vanessok@mail.ru)
+ * @version $1.0$
+ * @since 16.09.2018
+ */
+public class Calculate {
+    /**
+     * Main.
+     * @param args - args.
+     */
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
 
-public class Calculate{
-	/**
-	*Main.
-	*@param args-args.
-	*@return Hello World 
-	*/
-	public static void main (String []args){
-		System.out.println("Hello word");
-	}
+    /**
+     * Method echo.
+     * @param name Ivan.
+     * @return Echo plus Ivan.
+     */
+    public String echo(String name) {
+        return "Echo, echo, echo : " + name;
+    }
 }
