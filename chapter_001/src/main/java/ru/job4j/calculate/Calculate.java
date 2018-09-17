@@ -1,11 +1,11 @@
-ppackage ru.job4j.calculate;
+package ru.job4j.calculate;
 
 /**
  * Calculate.
  *
- * @author Ivan Cheporov (mailto:vanessok@mail.ru)
- * @version $1.0$
- * @since 16.09.2018
+ * @author Ivan Cheporov (mailto:vanessok@mail.ru).
+ * @version $1.0$.
+ * @since 16.09.2018.
  */
 public class Calculate {
     /**
