@@ -7,6 +7,7 @@ package ru.job4j.calculate;
  * @version $1.0$.
  * @since 16.09.2018.
  */
+@SuppressWarnings("WeakerAccess")
 public class Calculate {
     /**
      * Main.

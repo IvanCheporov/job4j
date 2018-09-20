@@ -1,11 +1,8 @@
 package ru.job4j.calculate;
 
+import org.hamcrest.core.Is;
 import org.junit.Test;
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
-import static com.sun.org.apache.xerces.internal.util.PropertyState.is;
-import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -22,10 +19,11 @@ public class CalculateTest {
 @Test
 public void whenTakeNameThenTreeEchoPlusName() {
     String input = "Ivan Cheporov";
-    String expect = "Echo, echo, echo : Ivan Cheporov"; 
+    String expect = "Echo, echo, echo : Ivan Cheporov";
     Calculate calc = new Calculate();
     String result = calc.echo(input);
-    assertThat(result, is(expect));
+    assertThat(result, Is.is(expect));
+
 }
  
 }
