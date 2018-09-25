@@ -34,8 +34,8 @@ public class CalculatorTest {
         double result = calc.getResult();
         double expected = 2;
         assertThat(result, is(expected));
-/**
-* Test of the method whenTenDivTenThenOne().
+/*
+ Test of the method whenTenDivTenThenOne().
 */		
     }
 	@Test

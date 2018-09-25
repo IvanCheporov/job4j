@@ -10,14 +10,11 @@ package ru.job4j.calculator;
 
 public class Calculator {
 	/**
-     * Main class for calculate.
-     */
+	 * field for save result.
+	 */
     private double result;
-	/**
-     * field for save result.
-	 *@param result - result.
-     */
-	
+
+
     /**
      * Method add.
      * @param first, second.
@@ -29,26 +26,26 @@ public class Calculator {
     /**
      * Method subtract.
      * @param first, second.
-     * @return result = first-second.
+     * @return result = first - second.
      */
 	public void subtract(double first, double second) {
-		this.result = first-second;
+		this.result = first - second;
 	}
 	/**
      * Method div.
      * @param first, second.
-     * @return result = first/second.
+     * @return result = first / second.
      */
-	public void div (double first, double second) {
-		this.result = first/second;
+	public void div(double first, double second) {
+		this.result = first / second;
 	}
 	/**
      * Method multiple.
      * @param first, second.
-     * @return result = first*second.
+
      */
-	public void multiple (double first, double second) {
-		this.result = first*second;
+	public void multiple(double first, double second) {
+		this.result = first * second;
 	}
 	/**
      * Method getResult().
