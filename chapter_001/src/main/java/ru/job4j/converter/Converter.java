@@ -1,38 +1,38 @@
 package ru.job4j.converter;
 
 /**
- * Корвертор валюты с определенной переменной value.
+ * РљРѕСЂРІРµСЂС‚РѕСЂ РІР°Р»СЋС‚С‹ СЃ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№ value.
  */
 public class Converter {
 
     /**
-     * Конвертируем Рубли в Евро.
-     * @param value Рубли.
-     * @return Евро.
+     * РљРѕРЅРІРµСЂС‚РёСЂСѓРµРј Р СѓР±Р»Рё РІ Р•РІСЂРѕ.
+     * @param value Р СѓР±Р»Рё.
+     * @return Р•РІСЂРѕ.
      */
     public int rubleToEuro(int value) {
 		return value / 70;
     }
     /**
-     * Конвертируем Рубли в Доллары.
-     * @param value Рубли.
-     * @return Доллары
+     * РљРѕРЅРІРµСЂС‚РёСЂСѓРµРј Р СѓР±Р»Рё РІ Р”РѕР»Р»Р°СЂС‹.
+     * @param value Р СѓР±Р»Рё.
+     * @return Р”РѕР»Р»Р°СЂС‹
      */
     public int rubleToDollar(int value) {
 		return value / 60;
     }
 	/**
-     * Конвертируем Евро в рубли.
-     * @param value Евро.
-     * @return Рубли.
+     * РљРѕРЅРІРµСЂС‚РёСЂСѓРµРј Р•РІСЂРѕ РІ СЂСѓР±Р»Рё.
+     * @param value Р•РІСЂРѕ.
+     * @return Р СѓР±Р»Рё.
      */
 	public int euroToruble(int value) {   
 		return value * 70;
     }
 	/**
-     * Конвертируем Доллары в рубли.
-     * @param value Доллары.
-     * @return Рубли.
+     * РљРѕРЅРІРµСЂС‚РёСЂСѓРµРј Р”РѕР»Р»Р°СЂС‹ РІ СЂСѓР±Р»Рё.
+     * @param value Р”РѕР»Р»Р°СЂС‹.
+     * @return Р СѓР±Р»Рё.
      */
 	public int dollarToruble(int value) { 
 		return value * 70;
