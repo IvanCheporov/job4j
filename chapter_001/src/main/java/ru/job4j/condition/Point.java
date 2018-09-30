@@ -22,7 +22,7 @@ public class Point {
 public static void main(String[] args) {
    /*Создание двух объектов a и b*/
     Point a = new Point(0, 1);
-    Point b = new Point(2, 5);
+    Point b = new Point(3, 5);
 
     System.out.println("x1 = " + a.x);
     System.out.println("y1 = " + a.y);

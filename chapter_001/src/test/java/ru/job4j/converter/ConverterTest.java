@@ -29,7 +29,7 @@ public class ConverterTest {
 	 @Test
     public void when3EuroToRubleThen210() {
         Converter converter = new Converter();
-        int result = converter.EuroToruble(70);
+        int result = converter.euroToruble(70);
         assertThat(result, is(210));
     }
 	/**
@@ -38,7 +38,7 @@ public class ConverterTest {
 	 @Test
     public void when3DollarsToRubleThen180() {
         Converter converter = new Converter();
-        int result = converter.DollarToruble(60);
+        int result = converter.dollarToruble(60);
         assertThat(result, is(180));
     }
 }

@@ -30,7 +30,7 @@ public class CalculatorTest {
 	@Test
     public void whenThreeSubstractOneThenTwo() {
         Calculator calc = new Calculator();
-        calc.substract(3, 1);
+        calc.subtract(3, 1);
         double result = calc.getResult();
         double expected = 2;
         assertThat(result, is(expected));
