@@ -1,13 +1,13 @@
 package ru.job4j.max;
 
 /**
- * Программа, возвращающая максимум из двух чисел first and second.
+ * РџСЂРѕРіСЂР°РјРјР°, РІРѕР·РІСЂР°С‰Р°СЋС‰Р°СЏ РјР°РєСЃРёРјСѓРј РёР· РґРІСѓС… С‡РёСЃРµР» first and second.
  */
 public class Max {
 
     /**
-     * Метод max, возвращающий максимум из двух чисел first and second.
-     * @param first, second числа.
+     * РњРµС‚РѕРґ max, РІРѕР·РІСЂР°С‰Р°СЋС‰РёР№ РјР°РєСЃРёРјСѓРј РёР· РґРІСѓС… С‡РёСЃРµР» first and second.
+     * @param first, second С‡РёСЃР»Р°.
      * @return max.
      */
     public int max(int first, int second) {
