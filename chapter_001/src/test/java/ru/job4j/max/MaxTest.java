@@ -19,7 +19,18 @@ public void whenSecondLessFirst() {
     int result = maximum.max(5, 10);
     assertThat(result, is(10));
 } 
-
+@Test
+public void whenFirstLessSecondandThird() {
+    Max maximum = new Max();
+    int result = maximum.maxofthree(5, 10, 20);
+    assertThat(result, is(20));
+} 
+@Test
+public void whenSecondLessFirstandThird() {
+    Max maximum = new Max();
+    int result = maximum.maxofthree(25, 10, 20);
+    assertThat(result, is(25));
+} 
     }
 
  
