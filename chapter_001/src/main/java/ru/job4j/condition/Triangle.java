@@ -1,4 +1,4 @@
-package ru.job4j.condition
+package ru.job4j.condition;
 
 /**
  * @author Ivan Cheporov (vanessok@mail.ru)
