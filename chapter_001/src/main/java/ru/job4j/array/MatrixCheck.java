@@ -7,15 +7,18 @@
 
 public class MatrixCheck {
     public boolean mono(boolean[][] data) {
-        boolean result = true;
-        for (int i = 0; i < data.length - 1; i++) {
-                if ((i + j) % 2 == 0 && data[i][j] != data[i + 1][i + 1]
-                                     && data[i][j] != data[i + 1][data[i + 1].length - i - 2]) {
-					result = false;
-					break;
-				}
-            }
+    boolean result = true;
+    for (int i = 0; i < data.length; i++) {
+        if (data[0][0] != data[i][i]) {// проверяем первую диагональ
+            result = false;
+            break;
         }
-        return result;
+
+        if  (data[i - 1][data.length - i] != data[i][data.length - i - 1])) {//напиши тут индексы второй диагонали
+            result = false;
+            break;
+        }
     }
+    return result;
 }
+
