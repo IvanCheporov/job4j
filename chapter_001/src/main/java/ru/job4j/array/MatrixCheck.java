@@ -7,8 +7,8 @@
 
 public class MatrixCheck {
     /**
-     * @param data
-     * @return
+     * @param data.
+     * @return result.
      */
     public boolean mono(boolean[][] data) {
         boolean result = true;
@@ -25,4 +25,3 @@ public class MatrixCheck {
         }
         return result;
     }
-}
