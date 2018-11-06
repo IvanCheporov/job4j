@@ -6,19 +6,23 @@
  */
 
 public class MatrixCheck {
+    /**
+     * @param data
+     * @return
+     */
     public boolean mono(boolean[][] data) {
-    boolean result = true;
-    for (int i = 0; i < data.length; i++) {
-        if (data[0][0] != data[i][i]) {// проверяем первую диагональ
-            result = false;
-            break;
-        }
+        boolean result = true;
+        for (int i = 1; i < data.length; i++) {
+            if (data[0][0] != data[i][i]) {// проверяем первую диагональ
+                result =  false;
+                break;
+            }
 
-        if  (data[i - 1][data.length - i] != data[i][data.length - i - 1])) {//напиши тут индексы второй диагонали
-            result = false;
-            break;
+            if ((data[i - 1][data.length - i] != data[i][data.length - i - 1])) {// проверяем дальше по диагоналям
+                result = false;
+                break;
+            }
         }
+        return result;
     }
-    return result;
 }
-
