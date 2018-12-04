@@ -7,6 +7,6 @@
 
 
 public class Teacher extends Profession {
-	public void teachStudent() {
+	private void teachStudent() {
 		}
 }

@@ -7,6 +7,6 @@
 
 
 public class Engineer extends Profession {
-	public void buildHouse() {
+	private void buildHouse() {
 		}
 }

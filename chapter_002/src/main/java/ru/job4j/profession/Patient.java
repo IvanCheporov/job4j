@@ -7,5 +7,5 @@
 
 
 public class Patient {
-	public String patientname;
+	private String patientname;
 }

@@ -7,5 +7,5 @@
 
 
 public class Student {
-	public String studentname;
+	private String studentname;
 }

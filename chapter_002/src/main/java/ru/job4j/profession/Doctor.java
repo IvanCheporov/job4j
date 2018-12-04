@@ -7,6 +7,6 @@
 
 
 public class Doctor extends Profession {
-	public void treatPatient() {
+	private void treatPatient() {
 		}
 }
