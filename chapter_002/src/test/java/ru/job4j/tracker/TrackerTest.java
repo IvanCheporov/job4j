@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
-/**
- * @author Ivan Cheporov (vanessok@mail.ru)
+/*
+  @author Ivan Cheporov (vanessok@mail.ru)
  * @version $1.0$
  * @since 28.12.2018.
  */

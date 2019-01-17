@@ -1,4 +1,4 @@
-﻿package ru.job4j.tracker;
+﻿package ru.job4j.tracker.start;
 /**
  * @author Ivan Cheporov (vanessok@mail.ru)
  * @version $1.0$
@@ -57,19 +57,15 @@ public class Tracker {
     /**
      * удаление заявок
      */
-    public boolean delete(String id) {
-        boolean result = false;
-        int count = 0;
-        for (int i = 0; i < position; i++) {
-            if (items[i].getId().equals(id)) {
-                items[i] = items[count];
-                System.arraycopy(this.items, i + 1, this.items, i, items.length - i - 1);
-                position--;
-                result = true;
+    public void delete(String id) {
+        for (int i = 0; i < this.position; i++) {
+            if (this.items[i] != null && this.items[i].getId().equals(id)) {
+                this.items[i] = null;
+                System.arraycopy(this.items, i + 1, this.items, i, this.position - i - 1);
+                this.position--;
                 break;
             }
         }
-        return result;
     }
 
     /**
