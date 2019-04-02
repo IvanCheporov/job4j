@@ -1,4 +1,4 @@
-﻿package ru.job4j.profession;
+package ru.job4j.profession;
 /**
  * @author Ivan Cheporov (vanessok@mail.ru)
  * @version $1.0$

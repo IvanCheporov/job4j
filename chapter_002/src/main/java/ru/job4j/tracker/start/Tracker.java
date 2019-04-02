@@ -1,4 +1,4 @@
-﻿package ru.job4j.tracker.start;
+package ru.job4j.tracker.start;
 /**
  * @author Ivan Cheporov (vanessok@mail.ru)
  * @version $1.0$

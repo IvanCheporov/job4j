@@ -1,4 +1,4 @@
-﻿package ru.job4j.tracker.models;
+package ru.job4j.tracker.models;
 /**
  * @author Ivan Cheporov (vanessok@mail.ru)
  * @version $1.0$
@@ -50,5 +50,9 @@ public class Item {
                 + ", name='" + name + '\''
                 + ", desc='" + desc + '\''
                 + ", create=" + create;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
