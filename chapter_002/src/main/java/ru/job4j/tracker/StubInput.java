@@ -1,12 +1,11 @@
 package ru.job4j.tracker;
 /**
- * StubInput
- * 
- *
- * @author Ivan Cheporov (vanessok@mail.ru).
  * @version 1.0
- * @since 02.04.2019.
+ * @since 04.04.2019
+ * @author Ivan Cheporov(vanessok@mail.ru)
  */
+
+import java.util.List;
 
 public class StubInput implements Input {
     /**
@@ -41,5 +40,22 @@ public class StubInput implements Input {
     @Override
     public String ask(String question) {
         return this.value[this.position++];
+    }
+
+    @Override
+    public int ask(String question, int[] range) {
+        int key = Integer.valueOf(this.ask(question));
+        boolean exist = false;
+        for (int value : range) {
+            if (value == key) {
+                exist = true;
+                break;
+            }
+        }
+        if (exist) {
+            return key;
+        } else {
+            throw new MenuOutException("Некорректный ввод! Введите число из диапазона меню.");
+        }
     }
 }

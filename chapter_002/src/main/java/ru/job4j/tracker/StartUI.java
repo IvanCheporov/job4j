@@ -4,8 +4,8 @@ import java.util.function.Consumer;
 
 /**
  * @version 1.0
- * @since 02.04.2018
- * @author Ivan Cheporov (vanessok@mail.ru)
+ * @since 04.04.2019
+ * @author Ivan Cheporov(vanessok@mail.ru)
  */
 
 public class StartUI {
@@ -46,7 +46,9 @@ public class StartUI {
             menu.select(input.ask("Выберите пункт меню:", menu.getActionsNum()));
         } while (!"6".equals(this.input.ask("Выйти?(6): ")));
     }
-     /**
+
+
+    /**
      * Константа меню для добавления новой заявки.
      * */
     private static final String ADD = "0";

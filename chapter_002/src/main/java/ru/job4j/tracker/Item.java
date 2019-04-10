@@ -1,10 +1,9 @@
-package ru.job4j.tracker.models;
+package ru.job4j.tracker;
 /**
- * @author Ivan Cheporov (vanessok@mail.ru)
- * @version $1.0$
- * @since 28.12.2018.
+ * @version 1.0
+ * @since 04.04.2019
+ * @author Ivan Cheporov(vanessok@mail.ru)
  */
-
 
 public class Item {
 
@@ -13,15 +12,22 @@ public class Item {
     private String desc;
     private long create;
 
-    public Item(String desc, String name, long create) {
+    public Item(String name, String desc, long create) {
         this.name = name;
         this.desc = desc;
-        this.create = create;
+        this.create = System.currentTimeMillis();
     }
 
-    public Item(String id, String name) {
+    public Item(String name, String desc) {
         this.name = name;
+        this.desc = desc;
+    }
+
+    public Item(String id, String name, String desc) {
         this.id = id;
+        this.name = name;
+        this.desc = desc;
+
     }
 
     public String getName() {
@@ -50,9 +56,5 @@ public class Item {
                 + ", name='" + name + '\''
                 + ", desc='" + desc + '\''
                 + ", create=" + create;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
