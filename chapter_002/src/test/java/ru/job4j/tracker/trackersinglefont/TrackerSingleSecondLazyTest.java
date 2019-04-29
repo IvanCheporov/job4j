@@ -1,4 +1,4 @@
-package ru.job4j.trackersingle;
+package ru.job4j.trackersinglefont;
 
 import org.junit.Test;
 import ru.job4j.tracker.models.Item;
@@ -11,11 +11,11 @@ import static org.junit.Assert.assertThat;
  * @version 1.0
  * @since 24.04.2019
  */
-public class TrackerSingleThirdEagerTest {
+public class TrackerSingleSecondLazyTest {
     @Test
-    public void whenCheckSingletonForStaticFinalFieldEager() {
-        TrackerSingleThirdEager trackerFirst = TrackerSingleThirdEager.getInstance();
-        TrackerSingleThirdEager trackerSecond = TrackerSingleThirdEager.getInstance();
+    public void whenCheckSingletonForStaticFieldLazy() {
+        TrackerSingleSecondLazy trackerFirst = TrackerSingleSecondLazy.getInstance();
+        TrackerSingleSecondLazy trackerSecond = TrackerSingleSecondLazy.getInstance();
         assertThat(trackerFirst, is(trackerSecond));
         Item item = new Item("test1", "testDescription", 123L);
         Item item2 = new Item("test2", "testDescription2", 1234L);
