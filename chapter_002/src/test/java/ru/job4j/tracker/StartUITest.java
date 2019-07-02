@@ -1,11 +1,11 @@
 package ru.job4j.tracker;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.function.Consumer;
-
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
