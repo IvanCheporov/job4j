@@ -12,8 +12,8 @@ import java.util.Random;
 
 public class Tracker {
 
-    private final Item[] items = new Item[100];
-    private int position = 0;
+    
+    private final List<Item> items = new ArrayList<>();
     private static final Random RN = new Random();
 
     /**
