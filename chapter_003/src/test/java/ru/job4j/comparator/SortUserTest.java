@@ -1,8 +1,8 @@
 package ru.job4j.comparator;
 /**
  * @author Ivan Cheporov (vanessok@mail.ru)
- * @since 28.07.2019
- * @version 1.0
+ * @since 12.08.2019
+ * @version 2.0
  */
 
 import org.junit.Test;
